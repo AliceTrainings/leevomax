@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+    justify-content: space-between; 
+    gap: 50px;
+}
+.col1{
+    background-color:green;
+    width: 50%;
+}
+.col2{
+    background-color:aquamarine;
+    width: 50%;
+}
