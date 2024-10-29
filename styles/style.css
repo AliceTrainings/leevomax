@@ -1,6 +1,7 @@
 body{
-    margin: 0;
+    margin-top: 100px;
     padding: 0;
+    overflow-x: hidden;
 }
 .row1{
     display: flex;
@@ -9,11 +10,11 @@ body{
     margin: 0px;
 }
 .bg1{
-    background-color:aquamarine;
+    background-color:lightcoral;
     width: 50%;
 }
 .bg2{
-    background-color:aquamarine;
+    background-color:lightcoral;
     width: 50%;
 }
 .classHeader{
@@ -21,10 +22,46 @@ body{
 }
 .bg2 img{
     width: 100%;
+    border-radius: 5%;
+    height: fit-content;
 }
 .bg1 img{
     width: 100%;
+    border-radius: 5%;
+    height: fit-content;
 }
 .p{
     align-content: center;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+.temerario-logo{
+    margin-top: 100px;
+}
+.para1{
+    margin-top: 100px;
+    padding-left: 100px;
+    font-size: large;
+    font-weight: 700;
+}
+.revuelto-logo{
+    margin-top: 100px;
+}
+.para2{
+    margin-top: 100px;
+    padding-left: 100px;
+    font-size: large;
+    font-weight: 700; 
+}
+.image34{
+    margin-top: 100px;
+    border-radius: 5%;
+}
+.para3{
+    margin-top: 100px;
+    padding-left: 100px; 
+    font-size: large;
+    font-weight: 500;
 }
