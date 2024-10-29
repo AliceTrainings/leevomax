@@ -9,66 +9,122 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="" />
     <title>Document</title>
   </head>
   <body>
     <!--navbar start-->
-    <nav class="navbar navbar-expand-lg fixed-top bg-secondary shadow-sm">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+    <div class="fixed-top">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-success shadow-sm">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">logo</a>
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Offcanvas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active mx-lg-2"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Promoters</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active mx-lg-2" aria-current="page" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Promoters</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Contact</a>
-              </li>
-            </ul>
+        </nav>
+      </header>
+    </div>
+    <!--navbar end-->
+    <!--footer starts-->
+    <footer class="bg-dark p-2 text-white bg-opacity-75 fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <h5 class="text-uppercase mb-4">ADDRESS</h5>
+            <p>
+              Arundalpet 8/1 lane, <br />
+              Guntur, Andhara Pradesh, <br />
+              522004, India
+            </p>
+            <p>
+              Phone: 8332833674<br />
+              Email: alicesoft@gmail.com
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>Follow Us On Social Media</h2>
+            <p class="mb-4 ps-auto">
+              Stay connected with us through our social media platforms.
+            </p>
+            <a href="#" class="text-dark m-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark m-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-dark m-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-dark m-2"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:9381906224" class="btn btn-primary m-3">
+              <i class="bi bi-telephone-fill"></i> Call Us
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.6921449829351!2d80.43989853856704!3d16.303297196102676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75007f7e4b6b%3A0x7be42a4cd8bae28!2sAlice%20Trainings!5e0!3m2!1sen!2sin!4v1730123346989!5m2!1sen!2sin"
+              width="550"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
-    </nav>
-    <!--navbar end-->
-    <!--footer starts-->
-    
+    </footer>
     <!--footer ends-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
