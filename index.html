@@ -3,80 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carousel Slider</title>
     <style>
-*{
-    box-sizing:border-box;
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.carousel {
-    position: relative;
-    max-width:100%;
-    overflow: hidden;
-}
-.carousel-inner {
-    display: flex;
-    justify-content:center;
-    transition: transform 0.5s ease;
-}.carousel-item {
-    min-width: 100%;
-    display: flex;
-    justify-content:center;
-   }
-.carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1000;
-    font-size:18px;
-}
+        /* Basic styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* overflow-x: hidden; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* height: 100vh; */
+            background-color: #f0f0f0;
+        }
 
-.prev {
-    left: 10px;
-}
+        .slider-container {
+            position: relative;
+            /* width: 80%; */
+            /* max-width: 800px; */
+            /* height: 80vh; */
+            overflow: hidden;
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
 
-.next {
-    right: 10px;
-}
+        .slider-wrapper {
+            display: flex;
+            /* width: 1000%; */
+            /* height: 100%; */
+            animation: slide-animation 20s infinite; /* 10 slides x 10 seconds */
+            width: 100vw;
+            height: 100vh;
+        }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-    .carousel-button {
-        padding: 8px;
-        font-size: 16px;
-    }
-}
+        /* Slide styling */
+        .slide {
+            /* width: 10%;
+            height: 100%; */
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
 
-</style>
+        .slide img {
+            /* max-width: 100%;
+            max-height: 100%; */
+            border-radius: 8px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Background colors for testing 
+        .slide1 { background-color: #3498db; }
+        .slide2 { background-color: #e74c3c; }
+        .slide3 { background-color: #2ecc71; }
+        .slide4 { background-color: #9b59b6; }
+        .slide5 { background-color: #f39c12; }
+        .slide6 { background-color: #1abc9c; }
+        .slide7 { background-color: #34495e; }
+        .slide8 { background-color: #16a085; }
+        .slide9 { background-color: #2980b9; }
+        .slide10 { background-color: #c0392b; }*/
+
+        /* Animation */
+        @keyframes slide-animation {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(0); }
+            20% { transform: translateX(-10%); }
+            30% { transform: translateX(-20%); }
+            40% { transform: translateX(-30%); }
+            50% { transform: translateX(-40%); }
+            60% { transform: translateX(-50%); }
+            70% { transform: translateX(-60%); }
+            80% { transform: translateX(-70%); }
+            90% { transform: translateX(-80%); }
+            100% { transform: translateX(-90%); }
+        }
+
+        /* Adjust timing for each slide */
+        @keyframes slide-animation {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(-100); }
+            20% { transform: translateX(-200%); }
+            30% { transform: translateX(-300%); }
+            40% { transform: translateX(-400%); }
+            50% { transform: translateX(-500%); }
+            60% { transform: translateX(-600%); }
+            70% { transform: translateX(-700%); }
+            80% { transform: translateX(-800%); }
+            90% { transform: translateX(-900%); }
+            100% { transform: translateX(-1000%); }
+        }
+        
+    </style>
 </head>
 <body>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item 1 active">
-                <img src="image1.jpg" alt="Image 1">
-            </div>
-            <div class="carousel-item 2">
-                <img src="image2.jpg" alt="Image 2">
-            </div>
-            <div class="carousel-item 3">
-                <img src="image3.jpg" alt="Image 3">
-            </div>
+<div class="slider-container">
+    <div class="slider-wrapper">
+        <div class="slide slide1">
+            <img src="images/car 1.jpg" alt="image1"> 
         </div>
-        <button class="carousel-button prev" onclick="prevSlide()">❮</button>
-        <button class="carousel-button next" onclick="nextSlide()">❯</button>
+        <div class="slide slide2">
+            <img src="images/car 10.jpg" alt="image2"> 
+        </div>
+        <div class="slide slide3">
+            <img src="images/car 3.jpg" alt="image3"> 
+        </div>
+        <div class="slide slide4">
+            <img src="images/car 4.webp" alt="image4"> 
+        </div>
+        <div class="slide slide5">
+            <img src="images/car 5.webp" alt="image5"> 
+        </div>
+        <div class="slide slide6">
+            <img src="images/car 6.webp" alt="image6"> 
+        </div>
+        <div class="slide slide7">
+            <img src="images/car 7.jpg" alt="image7"> 
+        </div>
+        <div class="slide slide8">
+            <img src="images/car 8.jpg" alt="image8"> 
+        </div>
+        <div class="slide slide9">
+            <img src="images/car 9.jpg" alt="image9"> 
+        </div>
+        <div class="slide slide10">
+            <img src="images/car 2.jpg" alt="image10"> 
+        </div>
     </div>
-    
+</div>
+
 
 </body>
 </html>
