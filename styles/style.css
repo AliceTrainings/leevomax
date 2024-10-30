@@ -3,22 +3,13 @@ body{
     margin-top: 60px;
     padding: 0;
     overflow-x: hidden;
+    background-color: lightcoral;
 }
 .row1{
     display: flex;
     justify-content: space-between; 
     gap: 10px;
     margin: 0px;
-}
-.bg1{
-    background-color:lightcoral;
-    width: 50%;
-    
-}
-.bg2{
-    background-color:lightcoral;
-    width: 50%;
-    
 }
 .classHeader{
     margin-bottom: 60px;
@@ -41,44 +32,41 @@ body{
     width: 200px;
     height: 100px;
 } 
- /* .temerario-logo{
-    margin-top: 100px;
-   
-}  */
   .para1{
-    margin-top: 100px;
-    /* padding-left: 100px;   */
+    margin-top: 30px;
+    margin-bottom: 100px;
     font-size: large;
     font-weight: 700;
 }  
-  
-/* .revuelto-logo{
-    margin-top: 100px;
-}  */
- .para2{
-    margin-top: 100px;
-    padding-left: 0px;
-    font-size: large;
-    font-weight: 700; 
-} 
- .image34{
-    margin-top: 100px;
+ .img3{
+    padding-top: 100px;
     border-radius: 5%;
 } 
- .para3{
-    margin-top: 100px;
-    padding-left: 0px; 
-    font-size: large;
-    font-weight: 500;
-}
 .row .img1{
     padding-top: 100px;
  }  
- /* img{
+ .img2{
+    padding-top: 100px;
+ }
+.test1{
+    display: flex;
+
+}
+.test1 img{
     width: 100%;
     height: auto;
+    margin-top: 100px;
+    border-radius: 5%;
 }
-
-.rgt{
-    padding: 3rem;
-} */
+.test2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%; 
+}
+.test3 img{
+    width: 100%;
+    height: auto; 
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border-radius: 5%;
+}
