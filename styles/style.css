@@ -3,31 +3,15 @@ body{
     margin-top: 60px;
     padding: 0;
     overflow-x: hidden;
-    background-color: lightcoral;
+    /* background-image: url(/images/pexels-cesarperez209-733745.jpg);  */
+    /* background-repeat: no-repeat;  */
+    /* height: auto;
+    width: auto; */
 }
-.row1{
-    display: flex;
-    justify-content: space-between; 
-    gap: 10px;
-    margin: 0px;
-}
+
 .classHeader{
     margin-bottom: 60px;
 }
-.bg2 img{
-    width: 100%;
-    border-radius: 5%;
-    height: fit-content;
-}
-.bg1 img{
-    width: 100%;
-    border-radius: 5%;
-    height: fit-content;
-    margin-top: 100px;
-}
-.p{
-    align-content: center;
-} 
 .logo{
     width: 200px;
     height: 100px;
@@ -50,23 +34,23 @@ body{
  }
 .test1{
     display: flex;
-
 }
+
 .test1 img{
     width: 100%;
     height: auto;
     margin-top: 100px;
-    border-radius: 5%;
+    border-radius: 50%;
 }
 .test2 img{
     width: 100%;
     height: auto;
-    border-radius: 5%; 
+    border-radius: 50%; 
 }
 .test3 img{
     width: 100%;
     height: auto; 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-top: 10px;
-    border-radius: 5%;
+    border-radius: 50%;
 }
