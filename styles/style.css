@@ -1,12 +1,17 @@
-body{
+body {
   background-color: #016F85;
-  text-align: centre;
-  justify-content: centre;
-  justy-items: centre;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-h1{
-  color: #F8F873;
+
+h1 {
+  color: #ffffff;
 }
-h1{
-  color: #FFFF;
+
+h2{
+  color: goldenrod;
 }
